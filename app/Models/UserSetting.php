@@ -10,6 +10,7 @@ use App\Models\User;
 class UserSetting extends Model
 {
     protected $fillable = [
+        'user_id',
         'theme',
         'items_per_page',
         'timezone',

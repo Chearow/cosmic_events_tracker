@@ -41,6 +41,9 @@ class User extends Authenticatable
         return $this->hasMany(FavoriteEvent::class);
     }
 
+    /**
+     * @return \Illuminate\Database\Eloquent\Relations\HasOne|\App\Models\UserSetting
+    */
     public function userSetting(): HasOne
     {
         return $this->hasOne(UserSetting::class);
