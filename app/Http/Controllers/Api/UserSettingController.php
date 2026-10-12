@@ -20,7 +20,7 @@ class UserSettingController extends Controller
         return response()->json($user_setting->toArray());
     }
 
-    public function update(Request $request): JsonResponse
+    public function update(Request $request)
     {
         $user = $request->user();
 
